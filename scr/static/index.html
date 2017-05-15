@@ -1,0 +1,255 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><!-- Force IE to use the latest rendering engine -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>e-portfolio</title>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/animatecss/2.1.0/animate.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body id="index">
+
+<!----------script---------->
+
+<script type="application/javascript">
+    $(document).ready(function(){
+        $("#content div").hide();
+
+        $("#sidebar nav li a[id]").click(function(){
+            var contendId = this.id + "content";
+
+            $("#content span").hide();
+            $("#content div").hide();
+            $("#" + contendId).show();
+            $("." + contendId).show();
+//            $("#content").slideDown('slow');
+
+            return false;
+        });
+
+    });
+
+</script>
+
+<!----------main---------->
+
+<div class="container">
+    <div id ="header" class = "row text-center">
+
+        <!----------logo---------->
+        <div id="logo">
+            <span>
+                <span style="white-space: nowrap">
+                    <span class = "delay02 animated fadeInUp">S</span>
+                    <span class = "delay08 animated fadeInUp">a</span>
+                    <span class = "delay06 animated fadeInUp">r</span>
+                    <span class = "delay09 animated fadeInUp">i</span>
+                    <span class = "delay04 animated fadeInUp">n</span>
+                    <span class = "delay10 animated fadeInUp">a</span>
+                </span>
+                <span>  </span>
+                <span style="white-space: nowrap">
+                    <span class = "delay06 animated fadeInUp">C</span>
+                    <span class = "delay04 animated fadeInUp">h</span>
+                    <span class = "delay07 animated fadeInUp">e</span>
+                    <span class = "delay10 animated fadeInUp">n</span>
+                </span>
+            </span>
+        </div>
+    </div>
+
+    <!----------sidebar---------->
+    <div id = "main" class = "row">
+        <div id = "sidebar" class = "col-sm-3">
+            <nav id="sidebar-nav">
+                <ul>
+                    <li><a id="side-about" class="delay02 animated fadeInUp" href="#">About</a>
+                    <li><a id="side-projects" class="delay04 animated fadeInUp" href="#">Projects</a>
+                    <li><a id="side-skills" class="delay06 animated fadeInUp" href="#">Skills</a>
+                    <li><a id="side-community" class="delay08 animated fadeInUp" href="#">Community</a>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!----------content---------->
+        <div id = "content" class = "col-sm-8 delay09 animated fadeInUp">
+            <span style="font-size:15px" class = "delay11 animated fadeIn">Welcome</span>
+
+            <!----------about---------->
+            <div id="side-aboutcontent">
+                <ul>
+                    <li class = "delay01 animated fadeInRight">3rd year <b>UBC</b> student currently on Co-op</li>
+                    <li class = "delay02 animated fadeInRight">Combined major in <b>Computer Science & Microbiology and Immunology</b></li>
+                    </br>
+                    <li class = "delay03 animated fadeInRight">Loves the <b>logicality</b> of coding</li>
+                    <li class = "delay04 animated fadeInRight">Fascinated by the <b>vastness</b> of biology</li>
+                    </br>
+                    <li class = "delay05 animated fadeInRight">Introvert</li>
+                    <li class = "delay07 animated fadeInRight"><b>Detail-oriented</b>, hardworking, reflective</li>
+                    </br>
+                    <li class = "delay08 animated fadeInRight">Cat-lover</li>
+                    <li class = "delay09 animated fadeInRight">Dog-lover</li>
+                    <li class = "delay10 animated fadeInRight">Sea otter-lover</li>
+
+                </ul>
+            </div>
+
+            <!----------projects---------->
+            <div id="side-projectscontent" class = "side-projectscontent row">
+               <span class = "side-projectscontent">
+                    <div class = "side-projectscontent col-sm-6 col-xs-6 animated fadeInRight">
+                        <img src="img/insightUBC.png">
+                    </div>
+                    <div class = "side-projectscontent col-sm-6">
+                        <h3 class="delay01 animated fadeInRight"><strong>InsightUBC Web App</strong></h3>
+                        <ul>
+                            <li class="delay03 animated fadeInRight">App enables querying of the metadata from the UBC campus
+                                involving courses offered and rooms on campus</li>
+                            <li class="delay04 animated fadeInRight">Implemented functionalities to support processing, storing and deleting of zip files, JSON and
+                                HTML parsing, and query interpreting </li>
+                            <br />
+                            <p class="delay05 animated fadeInRight"><u>Skills & frameworks:</u> Typescript, Node.js, Git, Chai.js,
+                                React, Webstorm</p>
+                        </ul>
+                    </div>
+                </span>
+                <hr class="hrstyle">
+                <span class = "side-projectscontent">
+                    <div class = "side-projectscontent col-sm-6 col-xs-6 animated fadeInRight">
+                        <img src="img/mindthegap.png">
+                    </div>
+                    <div class = "side-projectscontent col-sm-6">
+                        <h3 class="delay07 animated fadeInRight"><strong>MindTheGap Android App</strong></h3>
+                        <ul>
+                            <li class="delay08 animated fadeInRight">App maps location of stops and tubelines on the London Underground as well as user location,
+                                and retrieves real time arrival information at those stops from Transport for London Open Data (Tfl)</li>
+                            <li class="delay09 animated fadeInRight">Implemented functionalities to support route searching, JSON parsing, and GPS mapping </li>
+                            <br />
+                            <p class="delay10 animated fadeInRight"><u>Skills & frameworks:</u> Java, JUnit Testing, IntelliJ, GenyMotion</p>
+                        </ul>
+                    </div>
+                </span>
+            </div>
+
+            <!----------skills---------->
+            <div id="side-skillscontent" class = "side-skillscontent">
+                <div class = "side-skillscontent row">
+                <div class="side-skillscontent col-sm-4 col-xs-6">
+                    <h4 class="animated fadeInRight"><strong>Languages</strong></h4>
+                    <ul>
+                        <li class="delay01 animated fadeInRight">Java</li>
+                        <li class="delay02 animated fadeInRight">Javascript/Typescript</li>
+                        <li class="delay03 animated fadeInRight">C/C++</li>
+                        <li class="delay04 animated fadeInRight">HTML/CSS*</li>
+
+                    </ul>
+                </div>
+                <div class="side-skillscontent col-sm-4 col-xs-6">
+                    <h4 class="animated fadeInRight"><strong>Technologies</strong></h4>
+                    <ul>
+                        <li class="delay01 animated fadeInRight">Unix</li>
+                        <li class="delay02 animated fadeInRight">Node.js*</li>
+                        <li class="delay03 animated fadeInRight">Chai.js</li>
+                        <li class="delay04 animated fadeInRight">Junit</li>
+                        <li class="delay05 animated fadeInRight">React*</li>
+                        <li class="delay05 animated fadeInRight">JQuery*</li>
+                    </ul>
+
+                </div>
+                <div class="side-skillscontent col-sm-4 col-xs-6">
+                    <h4 class="animated fadeInRight"><strong>Bioinformatics</strong></h4>
+                    <ul>
+                        <li class="delay01 animated fadeInRight">mySQL*</li>
+                        <li class="delay02 animated fadeInRight">MEGAN*</li>
+                        <li class="delay03 animated fadeInRight">BLAST*</li>
+                    </ul>
+                </div>
+                </div>
+                <p class="img_cap delay02 animated fadeIn">*Beginner or intermediate proficiency</p>
+
+            </div>
+
+            <!----------community---------->
+            <div id="side-communitycontent" class = "side-communitycontent row">
+                <span class = "side-communitycontent">
+                    <div class = "side-communitycontent col-sm-7 animated fadeInRight">
+                        <img src="img/spac.jpg">
+                        <p class = "side-communitycontent img_cap"><i>Anonymous farewell messages from year-end party</i></p>
+                    </div>
+                    <div class = "side-communitycontent col-sm-5">
+                        <h3 class="delay01 animated fadeInRight"><strong>SPAC</strong></h3>
+                    </div>
+                </span>
+                <hr class="hrstyle">
+                <span class = "side-communitycontent">
+                    <div class = "side-communitycontent col-sm-7 animated fadeInRight">
+                        <img src="img/cambodia.jpg">
+                        <p class = "side-communitycontent img_cap"><i>Khmer school children fascinated by Scrabble</i></p>
+                    </div>
+                    <div class = "side-communitycontent col-sm-5">
+                        <h3 class="delay05 animated fadeInRight"><strong>Cambodia</strong></h3>
+                    </div>
+                </span>
+                <hr class="hrstyle">
+                <span class = "side-communitycontent">
+                    <div class = "side-communitycontent col-sm-7 animated fadeInRight">
+                        <img src="img/results.jpg">
+                        <p class = "side-communitycontent img_cap"><i>UBC RESULTS booth at UBC Clubs' Day</i></p>
+                    </div>
+                    <div class = "side-communitycontent col-sm-5">
+                        <h3 class="delay05 animated fadeInRight"><strong>RESULTS Canada - UBC Chapter</strong></h3>
+                    </div>
+                </span>
+                <hr class="hrstyle">
+                <span class = "side-communitycontent">
+                    <div class = "side-communitycontent col-sm-12">
+                        <h3 class="delay09 animated fadeInRight"><strong>Others</strong></h3>
+                        <ul>
+                            <li class="delay10 animated fadeInRight">UBC CS Tri-mentoring</li>
+                            <li class="delay10 animated fadeInRight">S.U.C.C.E.S.S. Volunteer Coordination Team </li>
+                            <li class="delay11 animated fadeInRight">UBC Imagine Day Orientation Leader</li>
+                            <li class="delay11 animated fadeInRight">RAMH friendly visit volunteer</li>
+                        </ul>
+                    </div>
+                </span>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div id ="footer" class = "row text-center">
+        <span><a href="https://www.linkedin.com/in/sarina-chen-3555b4133/"><img src= "img/linkedin_icon.png"></a></span>
+        <span><a href="mailto:sarinachen96@gmail.com"><img src= "img/email_icon.png"></a></span>
+        <br />
+        <span>Copyright 2017 Sarina Chen</span>
+
+
+    </div>
+
+</div>
+
+</body>
+</html>
